@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Vedant — Software Engineering Student Portfolio. Projects, skills, and contact." />
+    <title>Vedant | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- ====== NAVBAR ====== -->
+    <header id="navbar" class="navbar">
+        <nav class="nav-container">
+            <a href="#home" class="nav-logo">&lt;Vedant /&gt;</a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <a href="images/VedantPawarResume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary nav-resume-btn">
+                        <i class="fas fa-download"></i> Resume
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <!-- Dark / Light mode toggle -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <!-- Hamburger menu -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ====== HERO SECTION ====== -->
+    <section id="home" class="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-image-wrapper reveal">
+                <div class="hero-image-ring"></div>
+                <img
+                    src="images/IMG_20250804_080853933_HDR.jpg"
+                    alt="Vedant profile picture"
+                    class="hero-image"
+                />
+            </div>
+            <p class="hero-greeting reveal">Hello, I'm</p>
+            <h1 class="hero-name reveal">Vedant</h1>
+            <h2 class="hero-tagline reveal">
+                <span class="typing" id="typingText"></span><span class="cursor-blink">|</span>
+            </h2>
+            <p class="hero-description reveal">
+                A passionate engineering student building clean, efficient, and scalable software solutions with a strong foundation in core technologies.
+            </p>
+            <div class="hero-cta reveal">
+                <a href="#about" class="btn btn-primary">
+                    <i class="fas fa-user"></i> About Me
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </a>
+            </div>
+
+            <div class="hero-social reveal">
+                <a href="https://www.linkedin.com/in/vedantpawar15/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/vedantpawar15" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <a href="#about" aria-label="Scroll down"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- ====== ABOUT SECTION ====== -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <p class="section-subtitle reveal">Get to know me better</p>
+
+            <div class="about-grid">
+                <!-- Introduction -->
+                <article class="about-intro reveal">
+                    <h3><i class="fas fa-user"></i> Who I Am</h3>
+                    <p>
+                        I'm Vedant, an Electrical and Computer Engineering student at MIT-WPU. I enjoy understanding how systems work at the hardware level and building solutions that bridge hardware and software.
+                    </p>
+                    <p>
+                        As a member of the MIT Tech Team (Robocon), I've worked on real-world engineering problems involving control systems, sensors, and system integration. These experiences strengthened my technical foundation and improved my ability to work in high-performance teams under deadlines.
+                    </p>
+                    <p>
+                        Beyond academics, I actively explore core technologies, participate in technical workshops, and continuously sharpen my problem-solving skills in C, C++, and system-level programming.
+                    </p>
+                </article>
+
+                <!-- Career Objective -->
+                <article class="about-objective reveal">
+                    <h3><i class="fas fa-bullseye"></i> Career Objective</h3>
+                    <p>
+                        Aspiring to build a career in core engineering and software development where I can apply my strong problem-solving skills, technical knowledge, and programming expertise to design efficient, scalable, and reliable solutions. Seeking opportunities to contribute to impactful projects while continuously growing as a competent and industry-ready engineer.
+                    </p>
+                </article>
+
+                <!-- Education -->
+                <article class="about-education reveal">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="education-card">
+                        <div class="education-icon"><i class="fas fa-university"></i></div>
+                        <div class="education-details">
+                            <h4>Bachelor of Technology, Electrical and Computer</h4>
+                            <p class="education-school">MIT-WPU</p>
+                            <p class="education-year"><i class="fas fa-calendar-alt"></i> Aug 2023 – Present</p>
+                            <p class="education-score"><i class="fas fa-star"></i> CGPA till 4th sem: 7.45</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Skills -->
+            <div class="skills-section reveal">
+                <h3 class="skills-heading"><i class="fas fa-cogs"></i> Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-cuttlefish"></i></div>
+                        <h4>C</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-c-plus-plus"></i></div>
+                        <h4>C++</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <h4>HTML5</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                        <h4>CSS3</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                        <h4>JavaScript</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <h4>Python</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                        <h4>Git &amp; GitHub</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h4>SQL / MongoDB</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+                        <span class="skill-percent">60%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CONTACT SECTION ====== -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <p class="section-subtitle reveal">I'd love to hear from you</p>
+
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info reveal">
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>vedant.15_mtt@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Pune, Maharashtra</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 99602 xxxxx</p>
+                        </div>
+                    </div>
+                        <div class="contact-social">
+                            <h4>Follow Me</h4>
+                            <div class="contact-social-links">
+                                <a href="https://www.linkedin.com/in/vedantpawar15/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/vedantpawar15" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form reveal" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="name" name="name" placeholder="John Doe" autocomplete="name" required />
+                        </div>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email" required />
+                        </div>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <div class="input-wrapper textarea-wrapper">
+                            <i class="fas fa-comment-dots"></i>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                        <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+                        <span class="btn-loading" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+                    </button>
+
+                    <!-- Success Message -->
+                    <div class="form-success" id="formSuccess" style="display:none;">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Message Sent Successfully!</h4>
+                        <p>Thank you for reaching out. I'll get back to you soon.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">&lt;Vedant /&gt;</div>
+                    <p class="footer-text">Building the future, one line of code at a time.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.linkedin.com/in/vedantpawar15/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/vedantpawar15" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                <hr class="footer-divider" />
+                <p class="footer-copy">&copy; <span id="currentYear"></span> Vedant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====== SCROLL TO TOP BUTTON ====== -->
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+

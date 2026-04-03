@@ -1,2 +1,0 @@
-Copy your PDF here as: resume.pdf
-Then the Contact panel "Resume PDF" link will work at /resume.pdf
